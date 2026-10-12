@@ -1,0 +1,26 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.POST_PROMOTED_NOTIFICATIONS" />
+    <application
+        android:name=".TickApp"
+        android:allowBackup="false"
+        android:directBootAware="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Timer"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Clock">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SET_TIMER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

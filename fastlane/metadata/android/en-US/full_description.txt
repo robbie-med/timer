@@ -1,0 +1,22 @@
+A timer that is just a dial. Spin it to set a time, tap the middle to start.
+
+* One turn of the dial is 60 minutes, snapping to whole minutes. Keep turning for hours.
+* Your five most recent times sit underneath as one-tap chips.
+* While it runs: the end time, +1 min, +5 min and Reset. Tap the middle to pause and resume.
+* A live countdown in the notification shade (a status-bar chip on Android 16).
+* When time's up it rings full-screen, even on the lock screen, with a quick volume ramp and vibration. Add a minute from the ring screen, or silence it with a volume key. It gives up after 10 minutes.
+* Answers "set a timer" requests from assistants and other apps.
+* Exact timing even in Doze; survives reboots.
+* Seven themes, switched by tapping the dot at the top right: You (Material You colours from your wallpaper), Night (pure AMOLED black and red, for the dark), Auto (Night from 21:00 to 07:00, You otherwise), Mono, Ember, Glacier and Paper (light).
+
+Tiny (under 100 KB), no ads, no tracking, no analytics, no Google Play Services. Android 13 or newer.
+
+Permissions:
+* USE_EXACT_ALARM: To end exactly on time, even in Doze.
+* POST_NOTIFICATIONS, POST_PROMOTED_NOTIFICATIONS: The live countdown and the ring notification.
+* USE_FULL_SCREEN_INTENT: To ring over the lock screen.
+* FOREGROUND_SERVICE (system-exempted / media playback): To keep ringing reliably.
+* RECEIVE_BOOT_COMPLETED: To restore a running timer after a reboot.
+* VIBRATE, WAKE_LOCK: Vibration and keeping the CPU awake while ringing.
+
+One of three single-purpose tools: World, Timer and Alarm.
